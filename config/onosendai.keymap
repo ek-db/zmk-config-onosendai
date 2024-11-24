@@ -23,10 +23,10 @@
 
         number_layer {
             bindings = <
-&kp LS(EXCL)    &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(STAR)   &kp N7      &kp N8  &kp N9  &kp PLUS
-&kp LS(CARET)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp FSLH       &kp N4      &kp N5  &kp N6  &kp MINUS
-&bootloader     &none         &none          &none         &none          &kp LS(UNDER)  &kp N1      &kp N2  &kp N3  &kp LS(QMARK)
-&bt BT_CLR_ALL                &bt BT_NXT     &none         &kp BSPC       &kp ENTER      &kp PERIOD  &kp N0          &to 0
+&kp LS(EXCL)    &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(STAR)   &kp N7  &kp N8      &kp N9  &kp PLUS
+&kp LS(CARET)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp FSLH       &kp N4  &kp N5      &kp N6  &kp MINUS
+&bootloader     &none         &none          &none         &none          &kp LS(UNDER)  &kp N1  &kp N2      &kp N3  &kp ENTER
+&bt BT_CLR_ALL                &bt BT_NXT     &none         &kp BSPC       &kp ENTER      &kp N0  &kp PERIOD          &to 0
             >;
         };
 
