@@ -7,57 +7,45 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 
 / {
-    behaviors {
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Hold Tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q      &kp W  &kp E         &kp R        &kp T                       &kp Y      &kp U  &kp I      &kp O       &kp P          
-&kp A      &kp S  &kp D         &kp F        &kp G                       &kp H      &kp J  &kp K      &kp L       &kp SEMICOLON  
-&kp Z      &kp X  &kp C         &kp V        &kp B                       &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SQT       
-&kp LCTRL  &none  &kp LEFT_GUI  &lt 1 SPACE  &mt LEFT_CONTROL BACKSPACE  &kp SPACE  &none  &kp SPACE  &kp DEL     &kp LEFT      
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none        
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none     
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none         
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none  
             >;
         };
 
         number_layer {
             bindings = <
-&kp GRAVE  &kp N1    &kp N2     &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8     &kp N9        
-&kp TILDE  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR      
-&trans     &kp NUBS  &trans     &trans    &trans    &trans     &ma_1      &ma_2     &ma_3      &ma_4         
-&trans     &trans    &kp LSHFT  &trans    &none     &trans     &none      &trans    &trans     &kp C_VOL_DN  
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none        
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none     
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none         
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none  
             >;
         };
 
-        accent_layer {
+        gaming_layer {
             bindings = <
-&trans  &ma_5        &trans  &kp LBKT     &trans  &ma_6   &trans  &kp NUHS  &kp EQUAL  &kp SEMI 
-&trans  &kp SQT      &trans  &ma_8        &trans  &trans  &trans  &trans    &trans     &trans    
-&kp F1  &kp F2       &kp F3  &kp F4       &kp F5  &kp F6  &kp F7  &kp F8    &kp F9     &kp F10   
-&trans  &kp K_CMENU  &trans  &kp C_POWER  &none   &trans  &none   &trans    &kp RSHFT  &mo SYM   
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none        
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none     
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none         
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none   
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans        &trans        &trans        &ma_9           &trans      &trans       &trans  &ma_10  &ma_11  &ma_12  
-&trans        &ma_13        &trans        &trans          &trans      &trans       &trans  &trans  &trans  &trans  
-&trans        &out OUT_TOG  &bt BT_NXT    &bt BT_CLR_ALL  &bt BT_PRV  &bootloader  &trans  &trans  &trans  &trans  
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &none       &trans       &none   &trans  &trans  &trans  
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none        
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none     
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none         
+&none  &none  &none  &none  &none  &none  &none  &none  &none &none   
             >;
         };
     };
