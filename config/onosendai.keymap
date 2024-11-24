@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -16,16 +17,16 @@
 &kp Q   &kp W  &kp E         &kp R                  &kp T                       &kp Y      &kp U      &kp I      &kp O    &kp P
 &kp A   &kp S  &kp D         &kp F                  &kp G                       &kp H      &kp J      &kp K      &kp L    &kp SEMI
 &kp Z   &kp X  &kp C         &kp V                  &kp B                       &kp N      &kp M      &kp COMMA  &kp DOT  &kp SQT
-&tog 2         &kp LEFT_GUI  &mt LEFT_SHIFT ESCAPE  &mt LEFT_CONTROL BACKSPACE  &kp SPACE  &kp ENTER  &mo 3               &kp A
+&tog 2         &kp LEFT_GUI  &mt LEFT_SHIFT ESCAPE  &mt LEFT_CONTROL BACKSPACE  &kp SPACE  &kp ENTER  &mo 3               &tog 1
             >;
         };
 
         number_layer {
             bindings = <
-&kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(STAR)   &kp N7  &kp N8   &kp N9  &kp EQUAL
-&kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp FSLH       &kp N4  &kp N5   &kp N6  &kp MINUS
-&none          &none         &none          &none         &none          &kp LS(UNDER)  &kp N1  &kp N2   &kp N3  &kp LS(QMARK)
-&none                        &none          &none         &kp BSPC       &kp SPACE      &none   &kp DOT          &kp N0
+&kp LS(EXCL)    &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(STAR)   &kp N7      &kp N8  &kp N9  &kp EQUAL
+&kp LS(CARET)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp FSLH       &kp N4      &kp N5  &kp N6  &kp MINUS
+&none           &none         &none          &none         &none          &kp LS(UNDER)  &kp N1      &kp N2  &kp N3  &kp LS(QMARK)
+&bt BT_CLR_ALL                &bt BT_NXT     &none         &kp BSPC       &kp ENTER      &kp PERIOD  &kp N0          &to 0
             >;
         };
 
