@@ -1,6 +1,6 @@
 if SHIELD_ONOSENDAI
 
 config ZMK_KEYBOARD_NAME
-    default "OnoSendai"
+    default "onosendai"
 
 endif
