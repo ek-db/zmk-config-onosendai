@@ -7,9 +7,6 @@ endif
 
 if SHIELD_ONOSENDAI
 
-config ZMK_SPLIT
-    default n
-
 if ZMK_DISPLAY
 
 config I2C
