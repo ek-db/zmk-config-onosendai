@@ -20,10 +20,10 @@ endif #zmk_display
 if LVGL
 
 config LV_Z_VDB_SIZE
-    default 64
+    default 32
 
 config LV_DPI_DEF
-    default 148
+    default 128
 
 config LV_Z_BITS_PER_PIXEL
     default 1
